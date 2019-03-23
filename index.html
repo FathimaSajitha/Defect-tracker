@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Horizontal Application Form - Template Monster Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/switchery.min.css">
+  <script type="text/javascript" src="js/switchery.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+  
+  <h1>Defect Tracker</h1>
+  
+  <form onsubmit="return false">
+  <div class="col-2">
+    <label>
+      Defect Id
+      <input placeholder="Defect ID?" id="defectid"  tabindex="1">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Severity
+      <select tabindex="2" id="severity">
+        <option>High</option>
+        <option>Medium</option>
+        <option>Law</option>
+      </select>
+    </label>
+  </div>
+  
+  <div class="col-3">
+    <label>
+      Priority
+      <select tabindex="3" id="priority">
+        <option>High</option>
+        <option>Medium</option>
+        <option>Law</option>
+      </select>
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Defect Type
+      <select tabindex="4" id="defecttype">
+        <option>UI</option>
+        <option>Functionality</option>
+        <option>Enhancement</option>
+        <option>Performance</option>
+      </select>
+     
+    </label>
+  </div>
+
+  <div class="col-3">
+    <label>
+      Entered By
+      <input placeholder="Who is Entered a defect?" id="enteredby"  tabindex="6">
+    </label>
+  </div>
+
+  <div class="col-4">
+    <label>
+      Entered Date
+      <input placeholder="What is the day you entered the defect ?" id="enterddate"  tabindex="7">
+    </label>
+  </div>
+
+  <div class="col-4">
+    <label>
+     Status
+     <select tabindex="4" id="status">
+      <option>New</option>
+      <option>Open</option>
+      <option>Fixed</option>
+      <option>Closed</option>
+      <option>Reopened</option>
+      <option>Defered</option>
+    </select>
+      
+    </label>
+  </div>
+
+  <div class="col-4">
+    <label>
+      Assigned To
+      <input placeholder="Assigned to?" id="assignedto"  tabindex="8">
+    </label>
+  </div>
+
+  <div class="col-4">
+    <label>
+      Fixed By
+      <input placeholder="Fixed by?" id="fixedby"  tabindex="9">
+    </label>
+  </div>
+
+  <div class="col-2">
+    <label>
+      Fixed Date
+      <input placeholder="Fied Date?" id="fixeddate"  tabindex="10">
+    </label>
+  </div>
+
+  <div class="col-2">
+    <label>
+      Available In
+      <input placeholder="availablein?" id="availablein"  tabindex="11">
+    </label>
+  </div>
+
+  <div class="col-1">
+    <label>
+      Comments
+      <input placeholder="What is your comments?" id="comments"  tabindex="12">
+    </label>
+  </div>
+  
+</form>
+
+ <div class="col-submit">
+  <button class="submitbtn" onclick="addDefect()">Add Defect</button>
+</div>
+    
+<script>
+
+  // creating object for ajax
+ function addDefect() {
+      var data = JSON.stringify({
+
+          "defectid": document.getElementById("defectid").value,
+          "severity":document.getElementById("severity").value,
+          "priority":document.getElementById("priority").value,
+          "defecttype":document.getElementById("defecttype").value,
+          "enteredby":document.getElementById("enteredby").value,
+          "enterddate":document.getElementById("enterddate").value,
+          "status":document.getElementById("status").value,
+          "assignedto" :document.getElementById("assignedto").value,
+          "fixedby":document.getElementById("fixedby").value,
+          "fixeddate":document.getElementById("fixeddate").value,
+          "availablein":document.getElementById("availablein").value,
+          "comments":document.getElementById("comments").value
+ });
+      var xhr = new XMLHttpRequest();
+      console.log(xhr);
+      xhr.open("POST", "http://localhost:3000/Defect")
+      xhr.setRequestHeader("Content-type", "application/json");
+      xhr.send(data);
+    
+ }
+</script>
+
+
+</body>
+</html>

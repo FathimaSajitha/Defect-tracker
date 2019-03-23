@@ -1,0 +1,201 @@
+{
+  "Defect": [
+    {
+      "id": 1,
+      "Defect ID": "001",
+      "Severity": "High",
+      "Priority": "High",
+      "Defect Type": "UI",
+      "Entered By": "Sajitha",
+      "Entered Date": "2019.03.21",
+      "Status": "New",
+      "Assigned to": "Jothi",
+      "Fixed by": "Sajitha",
+      "Fixed Date": "2019.04.13",
+      "Available In": "Monday",
+      "Comments": "kjhgfdnbvcf"
+    },
+    {
+      "id": 2,
+      "Defect ID": "02",
+      "Severity": "High",
+      "Priority": "High",
+      "Defect Type": "UI",
+      "Entered By": "Sajitha",
+      "Entered Date": "2019.03.21",
+      "Status": "New",
+      "Assigned to": "Jothi",
+      "Fixed by": "Sajitha",
+      "Fixed Date": "2019.04.13",
+      "Available In": "Monday",
+      "Comments": "kjhgfdnbvcf"
+    },
+    {
+      "defectid": "qq",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "qq",
+      "enterddate": "qq",
+      "status": "New",
+      "assignedto": "qq",
+      "fixedby": "qq",
+      "fixeddate": "qqq",
+      "availablein": "qq",
+      "comments": "qqqqq",
+      "id": 3
+    },
+    {
+      "defectid": "008",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "",
+      "enterddate": "",
+      "status": "New",
+      "assignedto": "",
+      "fixedby": "",
+      "fixeddate": "qqq",
+      "availablein": "qq",
+      "comments": "aaaaaaaa",
+      "id": 4
+    },
+    {
+      "defectid": "1",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "",
+      "enterddate": "",
+      "status": "New",
+      "assignedto": "",
+      "fixedby": "",
+      "fixeddate": "1",
+      "availablein": "",
+      "comments": "1",
+      "id": 5
+    },
+    {
+      "defectid": "cv",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "1",
+      "enterddate": "gg",
+      "status": "New",
+      "assignedto": "f",
+      "fixedby": "gg",
+      "fixeddate": "gg",
+      "availablein": "gg",
+      "comments": "hh",
+      "id": 6
+    },
+    {
+      "defectid": "006",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "jothi",
+      "enterddate": "1111",
+      "status": "New",
+      "assignedto": "0000",
+      "fixedby": "00000",
+      "fixeddate": "000",
+      "availablein": "dddd",
+      "comments": "ddddd",
+      "id": 7
+    },
+    {
+      "defectid": "aaq",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "aa",
+      "enterddate": "aa",
+      "status": "New",
+      "assignedto": "aa",
+      "fixedby": "aa",
+      "fixeddate": "aa",
+      "availablein": "aa",
+      "comments": "aa",
+      "id": 8
+    },
+    {
+      "defectid": "",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "",
+      "enterddate": "",
+      "status": "New",
+      "assignedto": "",
+      "fixedby": "",
+      "fixeddate": "",
+      "availablein": "",
+      "comments": "",
+      "id": 9
+    },
+    {
+      "defectid": "ddd",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "ddd",
+      "enterddate": "ddd",
+      "status": "Defered",
+      "assignedto": "FFF",
+      "fixedby": "FF",
+      "fixeddate": "FGFF",
+      "availablein": "FFF",
+      "comments": "GFGGG",
+      "id": 10
+    },
+    {
+      "defectid": "sa",
+      "severity": "High",
+      "priority": "High",
+      "defecttype": "UI",
+      "enteredby": "sa",
+      "enterddate": "sa",
+      "status": "New",
+      "assignedto": "sa",
+      "fixedby": "sa",
+      "fixeddate": "sa",
+      "availablein": "sa",
+      "comments": "sa",
+      "id": 11
+    }
+  ],
+  "Severity": [
+    {
+      "high": "ddd",
+      "medium": "ddd",
+      "low": "dddd"
+    }
+  ],
+  "Priority": [
+    {
+      "high": "ddd",
+      "medium": "ddd",
+      "low": "dddd"
+    }
+  ],
+  "Defettype": [
+    {
+      "ui": "dffv",
+      "Functionality": "dffv",
+      "Enhancement": "sdddd",
+      "Performance": "cd"
+    }
+  ],
+  "status": [
+    {
+      "New": "hj",
+      "Open": "jj",
+      "Fixed": "n",
+      "Closed": "jhh",
+      "Reopend": "nnjhjh",
+      "Defered": "hhh"
+    }
+  ]
+}
