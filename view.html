@@ -1,0 +1,66 @@
+<table>  <thead>
+    <tr>
+       
+        <th for="severity">Defect Id</th>
+        <th>Severity</th>
+        <th> Priority</th>
+        <th>Defect Type</th>
+        <th>Entered By</th>
+        <th>Entered Date</th>
+        <th>Status</th>
+        <th>Assigned To</th>
+        <th>Fixed By</th>
+        <th>Fixed Date</th>
+        <th>Available In</th>
+        <th>Comments</th>
+    </tr>
+</thead>
+<tbody  id="addDefect">
+    </tbody>
+</table>
+
+<script>
+
+var xhr = new XMLHttpRequest();
+        console.log(xhr);
+        xhr.open("GET", "http://localhost:3000/Defect",true);
+        xhr.onload = function () {
+            var addDefect = JSON.parse(xhr.responseText);
+            //console.log(classifications);
+            var addDefectstr = "";
+            var json = JSON.parse(this.response);
+            json.forEach(function (view) {
+                console.log(view);
+                addDefectstr += `<tr>`;
+                addDefectstr += `<td value='${view.defectid}'>${view.defectid}</td>`;
+                addDefectstr += `<td value='${view.severity}'>${view.severity}</td>`;
+                addDefectstr += `<td value='${view.priority}'>${view.priority}</td>`;
+                addDefectstr += `<td value='${view.defecttype}'>${view.defecttype}</td>`;
+                addDefectstr += `<td value='${view.enteredby}'>${view.enteredby}</td>`;
+                addDefectstr += `<td value='${view.enterddate}'>${view.enterddate}</td>`;
+                addDefectstr += `<td value='${view.status}'>${view.status}</td>`;
+                addDefectstr += `<td value='${view.assignedto}'>${view.assignedto}</td>`;
+                addDefectstr += `<td value='${view.fixedby}'>${view.fixedby}</td>`;
+                addDefectstr += `<td value='${view.fixeddate}'>${view.fixeddate}</td>`;
+                addDefectstr += `<td value='${view.availablein}'>${view.availablein}</td>`;
+                addDefectstr += `<td value='${view.comments}'>${view.comments}</td>`;
+                addDefectstr += `<tr>`;
+
+            });
+            document.getElementById("addDefect").innerHTML = addDefectstr;
+        }
+
+        xhr.send();
+
+
+        function deleteDefect(){
+      
+      var id = document.getElementById("id").value;
+ 
+    var xhr = new XMLHttpRequest();
+    console.log(xhr);
+    xhr.open("DELETE", "http://localhost:3000/Add/"+id)
+    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.send();
+        }
+</script>

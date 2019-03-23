@@ -1,35 +1,6 @@
 {
   "Defect": [
-    {
-      "id": 1,
-      "Defect ID": "001",
-      "Severity": "High",
-      "Priority": "High",
-      "Defect Type": "UI",
-      "Entered By": "Sajitha",
-      "Entered Date": "2019.03.21",
-      "Status": "New",
-      "Assigned to": "Jothi",
-      "Fixed by": "Sajitha",
-      "Fixed Date": "2019.04.13",
-      "Available In": "Monday",
-      "Comments": "kjhgfdnbvcf"
-    },
-    {
-      "id": 2,
-      "Defect ID": "02",
-      "Severity": "High",
-      "Priority": "High",
-      "Defect Type": "UI",
-      "Entered By": "Sajitha",
-      "Entered Date": "2019.03.21",
-      "Status": "New",
-      "Assigned to": "Jothi",
-      "Fixed by": "Sajitha",
-      "Fixed Date": "2019.04.13",
-      "Available In": "Monday",
-      "Comments": "kjhgfdnbvcf"
-    },
+    
     {
       "defectid": "qq",
       "severity": "High",
@@ -164,6 +135,21 @@
       "availablein": "sa",
       "comments": "sa",
       "id": 11
+    },
+    {
+      "defectid": "005",
+      "severity": "Medium",
+      "priority": "Law",
+      "defecttype": "Enhancement",
+      "enteredby": "saswas",
+      "enterddate": "sasasa",
+      "status": "Fixed",
+      "assignedto": "ddddddd",
+      "fixedby": "xxxxxxx",
+      "fixeddate": "dddddd",
+      "availablein": "ddddddd",
+      "comments": "ssssssss",
+      "id": 12
     }
   ],
   "Severity": [
