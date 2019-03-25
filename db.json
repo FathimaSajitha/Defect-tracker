@@ -1,6 +1,5 @@
 {
   "Defect": [
-    
     {
       "defectid": "qq",
       "severity": "High",
@@ -150,6 +149,36 @@
       "availablein": "ddddddd",
       "comments": "ssssssss",
       "id": 12
+    },
+    {
+      "defectid": "002121",
+      "severity": "Medium",
+      "priority": "Medium",
+      "defecttype": "Functionality",
+      "enteredby": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "enterddate": "2019-03-25",
+      "status": "Fixed",
+      "assignedto": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "fixedby": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "fixeddate": "2019-05-25",
+      "availablein": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "comments": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": 13
+    },
+    {
+      "defectid": "",
+      "severity": "--------",
+      "priority": "--------",
+      "defecttype": "UI",
+      "enteredby": "",
+      "enterddate": "",
+      "status": "--------",
+      "assignedto": "",
+      "fixedby": "",
+      "fixeddate": "",
+      "availablein": "",
+      "comments": "",
+      "id": 14
     }
   ],
   "Severity": [
